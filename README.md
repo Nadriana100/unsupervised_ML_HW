@@ -1,4 +1,4 @@
-**SUMMARY**
+### **SUMMARY**
 # Cryptocurrency Clusters
 
 
@@ -42,7 +42,7 @@ PCA is fundamentally a dimensionality reduction algorithm, but it can also be us
 
 
 
-8. We can see in the scatter plot of the t-SNE output that we have that clusters are dense in one region and 2 clusters are smaller and equidistant to each other. Also, I noticed that every time I run it again the plot changes. 
+8. We can see in the scatter plot of the t-SNE output that we have that clusters are dense in one region and 2 clusters are smaller and equidistant to each other. 
 
 ![image](https://user-images.githubusercontent.com/92575973/167062447-c9c59a58-7bdc-4af3-b00d-80b6553d4af0.png)
 
@@ -50,16 +50,22 @@ PCA is fundamentally a dimensionality reduction algorithm, but it can also be us
 
 
 ### Cluster Analysis with k-Means
+The goal of KMeans is to identify similar data points and cluster them together while trying to distance each cluster as far as possible. Its “similarity” calculation is determined via Euclidean distance or an ordinary straight line between two points. The shorter the Euclidean distance the more similar the points are.
 
-9. The best number of clusters is 3, since initially, the quality of clustering improves rapidly when changing the value of K but eventually stabilizes. The elbow point is the point where the relative improvement is not very high anymore.
+
+9.  USISING PCA METHOD = There are not clusters as we can see clearly on the plot. The data are very very different. In other words,there are not homogeneous subgroups within the data. 
+ 
+![image](https://user-images.githubusercontent.com/92575973/167465462-62f38e20-8cbc-4dd8-9cf1-2bf5ab0737b2.png)
+
+
+
+I wanted to include this info in the sumamry, since t_SNE is another method to reduce the dimension and was used in this homework.
+
+9.1 USING t-SNE METHOD = The best number of clusters is 3, since initially, the quality of clustering improves rapidly when changing the value of K but eventually stabilizes. The elbow point is the point where the relative improvement is not very high anymore.
 
 ![image](https://user-images.githubusercontent.com/92575973/167062112-82ee1719-6216-4a25-a02a-3e3a78958792.png)
 
 
-
-### Recommendation
-
-10. Yes, the cryptocurrencies could be clustered, we can see our scatter plot and Elbow curve. It is very important to set the range to 1 to 10 in order to get an elbow plot, Elbow Curve plot is clear that cryptocurrencies can have 3 clusters, as you can see in 3 is where the K value stabilizes.
 
 
  
